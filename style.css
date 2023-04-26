@@ -113,7 +113,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
-  display: inline;
+  /* display: inline; */
 }
 li:last-child {
   margin-bottom: 0;
@@ -261,7 +261,6 @@ footer > p {
 /* ---------------------------------------------------------------------------------------------- */
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -329,53 +328,58 @@ h2::after {
   /* margin-left: 20px; */
 }
 
-.author-img {
-  float: left;
-  margin-bottom: 20px;
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .author {
-  /* padding-left: 80px; */
-  margin-top: 10px;
-  float: left;
-  margin-left: 20px;
+  margin-bottom: 0;
 }
 
-h1 {
-  float: left;
-  /* position: absolute; */
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
-nav {
-  float: right;
-  /* position: absolute; */
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 
-/* --------------------------------Clear Float div Method---------------------------- */
-/* .clear {
-  clear: both;
-} */
-/* ----------------------------------------------------------------------------------- */
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
 
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: block;
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
 }
 
 article {
-  /* background-color: green; */
-  width: 825px;
-  float: left;
+  /* flex: 0 0 825px; */
+  flex: 1;
+  margin-bottom: 0;
 }
 
 aside {
-  /* background-color: red; */
-  width: 300px;
-  float: right;
-}
-
-footer {
-  /* background-color: yellow; */
-  clear: both;
+  flex: 0 0 300px;
 }
